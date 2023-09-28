@@ -1,5 +1,5 @@
 Questões | Enunciado
-:---------: | :------:
+:---------: | :------
 1 | Objeto Literal: <br /> Crie um objeto literal chamado `pessoa` com as propriedades `nome` e `idade`. Inicialize essas propriedades com valores de sua escolha.
 2 | Função Fábrica: <br /> Crie uma função fábrica chamada `criarRetangulo` que aceita dois parâmetros: `largura` e `altura`. A função deve retornar um objeto com essas propriedades.
 3 | Função Construtora: <br /> Crie uma função construtora chamada `Produto` que aceita `nome` e `preco` como parâmetros e cria um objeto com essas propriedades.
