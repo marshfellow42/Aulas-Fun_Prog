@@ -1,0 +1,63 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Dice Number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box">
+        <!--  <p id="number"> </p> -->
+        <img src="" alt="" id="image">
+    </div>
+
+    <button onclick="random()" id="btn">
+        Get random number
+    </button>
+</body>
+
+<script>
+    function random() {
+        let rand = Math.floor(Math.random() * 6) + 1;
+        //document.getElementById('number').innerHTML = rand
+
+        switch (rand) {
+            case 1:
+                document.getElementById('image').src = 'Ass/Dice-1-b.png';
+
+                break;
+
+            case 2:
+                document.getElementById('image').src = 'Ass/Dice-2a-b.png';
+
+                break;
+
+            case 3:
+                document.getElementById('image').src = 'Ass/Dice-3a-b.png';
+
+                break;
+
+            case 4:
+                document.getElementById('image').src = 'Ass/Dice-4-b.png';
+
+                break;
+
+            case 5:
+                document.getElementById('image').src = 'Ass/Dice-5-b.png';
+
+                break;
+
+            case 6:
+                document.getElementById('image').src = 'Ass/Dice-6a-b.png';
+
+                break;
+
+
+        }
+    }
+</script>
+
+</html>

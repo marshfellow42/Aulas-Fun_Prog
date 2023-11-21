@@ -1,0 +1,26 @@
+/* 
+.box {
+    padding: 50px;
+    border: medium solid;
+    position: absolute;
+    width: 50px;
+}
+*/
+
+#image {
+    width: 800px;
+    display: block;
+    margin: 0 auto;
+}
+#number {
+    position: relative;
+    left: 20px;
+    width: 50px;
+}
+
+#btn {
+    position: relative;
+    top: 3%;
+    display: block;
+    margin: 0 auto;
+}
