@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Tradutor para pronome neutro</h1>
+    <label>Texto:</label>
+
+    <input type="text" id="procura"><br><br>
+
+    <button onclick="func()">
+        Click it
+    </button>
+
+    <p id="parag"></p>
+
+    <button onclick="muda()">
+        Mudar cor de fundo
+    </button>
+</body>
+
+<script>
+    function func() {
+        let name = document.getElementById('procura').value
+        let trocarO = name.replaceAll("o", "e")
+        let trocarA = trocarO.replaceAll("a", "e")
+        document.getElementById('parag').innerHTML = trocarA
+    }
+</script>
+
+<script>
+    function random(numero) {
+        return Math.floor(Math.random() * (numero + 1));
+    }
+    function muda() {
+        var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+        document.body.style.backgroundColor = rndCol;
+    }
+</script>
+
+</html>
